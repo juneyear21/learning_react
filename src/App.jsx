@@ -1,11 +1,11 @@
-import Greeting from "./componenets/Greeting";
-import ProductInfo from "./componenets/ProductInfo";
+import Person from "./componenets/Person";
+import Product from "./componenets/Product";
 
 const App = () => {
   return (
     <div>
-      <Greeting />
-      <ProductInfo />
+      <Person name="Rahul" age="25"/>
+      <Product name="Phone" price="$499"/>
     </div>
   )
 }
