@@ -1,14 +1,11 @@
-const now = new Date();
-const name = "Rahul";
-
-const Greeting = () => {
+const Greeting = ({timeOfDay}) => {
+  let message;
+  timeOfDay === "Morning" ? message = "Good morning" : timeOfDay === "Afternoon" ? message = "Good afternoon" : message = " niether afternoon or morning";
   return (
     <div>
-      <h1>KoniChiwa</h1>
-      <p>Name: {name}</p>
-      <p>Date: {now.toLocaleString()}</p>
+      <h1>{`Its ${message} Now !!`}</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Greeting;
+export default Greeting
