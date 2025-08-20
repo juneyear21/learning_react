@@ -1,9 +1,10 @@
-import Greeting from "./componenets/Greeting"
+import React from 'react'
+import Profile from './componenets/Profile'
 
 const App = () => {
   return (
     <div>
-      <Greeting timeOfDay= "csvs"/>
+      <Profile/>
     </div>
   )
 }
